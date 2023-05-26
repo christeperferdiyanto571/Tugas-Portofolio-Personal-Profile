@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CHRIS TEPER FERDIYANTO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">IDENTITAS DIRI</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="https://uad.ac.id/id/">Website UAD</a></li>
+                    <li><a href="#" id="contact-link">Contact Me</a></li>
+                    <li><a href="#" id="skill-link">Skill</a></li>
+                    <li><a href="#" id="about-link">About</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="content" class="content">
+            <h1>CHRIS TEPER FERDIYANTO <br><span>22000018392</span><br>INFORMATIKA</h1>
+            <div class="form">
+                <h2>PAS FOTO</h2>
+                <center>
+                    <img src="christ.jpeg" alt="foto" height="200px" width="153px">
+                </center>
+                <p class="link">Kejarlah Cita-Citamu <br>
+                    <a href="https://quran.com/id/para-rombongan/53-54">JANGAN</a> sampai</a></p>
+                <p class="liw">menyerah jika banyak rintangan</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("contact-link").addEventListener("click", function() {
+            var contact = "Email : 2200018392@webmail.uad.ac.id\nPhone : 085602406980\nAlamat : jalan kalimosodo kost bu ika";
+            alert(contact);
+        });
+
+        document.getElementById("skill-link").addEventListener("click", function() {
+            var skills = {
+                "HTML": 80,
+                "CSS": 70,
+                "JavaScript": 60,
+                "Python": 50
+            };
+
+            var skillText = "My Skills:\n\n";
+            for (var skill in skills) {
+                skillText += skill + ": " + skills[skill] + "%\n";
+            }
+            alert(skillText);
+        });
+
+        document.getElementById("about-link").addEventListener("click", function() {
+            var aboutText = "Perkenalkan nama saya Chris Teper Ferdiyanto, saya sedang menempuh studi di Universitas Ahmad Dahlan\nyang merupakan salah satu universitas terbaik yang berada di Yogyakarta, dengan mengambil program studi Informatika, saya angkatan 2022, saya mengambil prodi ini karena saya melihat peluang kerja yang sangat luas dan saya juga sudah tertarik semenjak lulus SMP.\nSaya lahir di cilacap bertepatan dengan tanggal 26 februari 2004 di kota jawa tengah. Saya 2 bersaudara dan saya anak terakhir.";
+
+            var aboutParagraph = document.createElement("p");
+            aboutParagraph.textContent = aboutText;
+
+            var contentDiv = document.getElementById("content");
+            contentDiv.appendChild(aboutParagraph);
+        });
+        function showNotification(target) {
+            alert('Anda akan diarahkan ke halaman ' + target);
+        }
+            alert("Selamat datang di web profil mahasiswa");
+
+    </script><footer>
+        <p>&copy; 2023 | Chris Teper Ferdiyanto</p>
+    </footer>
+    
+</body>
+</html>
